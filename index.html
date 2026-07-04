@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0e17" />
+  <meta
+    name="description"
+    content="Portfolio of Akila A, a Computer Science Engineering student focused on web development, AI, and software projects."
+  />
+  <title>Akila A | Software Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- God Mode: Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-brand">
+      <div class="brand-mark">AA</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- God Mode: Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- God Mode: Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- God Mode: Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Akila A home">
+      <span class="brand-mark">AA</span>
+      <span class="brand-text">
+        <strong>Akila A</strong>
+        <small>Software Developer</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-blob"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Computer Science Engineering Student</p>
+        <div class="hero-glitch">
+          <span>Akila A</span>
+          <span>Akila A</span>
+        </div>
+        <h1 id="hero-title">Akila A</h1>
+        <p class="hero-kicker" id="heroKicker"></p>
+        <p class="hero-text">
+          I build responsive web experiences, explore intelligent software with AI and machine learning,
+          and turn project ideas into clear, usable products.
+        </p>
+        <div class="hero-actions" aria-label="Portfolio actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="hero-links" aria-label="Profile links">
+          <a href="https://www.linkedin.com/in/akila-alagupandi" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://leetcode.com/u/akila_12/" target="_blank" rel="noreferrer">LeetCode</a>
+          <a href="mailto:aakila5500@gmail.com">aakila5500@gmail.com</a>
+        </div>
+      </div>
+      <div class="hero-snapshot" aria-label="Portfolio highlights" id="heroSnapshot">
+        <div>
+          <strong><span class="counter" data-target="8.37">0</span></strong>
+          <span>CGPA</span>
+        </div>
+        <div>
+          <strong>AI + Web</strong>
+          <span>Project Focus</span>
+        </div>
+        <div>
+          <strong>Coimbatore</strong>
+          <span>India</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-intro" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <p class="section-label">About Me</p>
+        <h2 id="about-title">Profile Summary</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Enthusiastic and self-motivated Computer Science Engineering student with a passion for software
+            development, AI, and web design. I enjoy learning new technologies, solving real-world problems,
+            and delivering quality digital experiences.
+          </p>
+          <p>
+            I combine strong communication, teamwork, and problem-solving skills with a disciplined approach
+            to managing tasks, meeting deadlines, and maintaining clean code. My goal is to contribute to
+            meaningful software projects while continuing to grow as a developer.
+          </p>
+        </div>
+        <div class="about-panel">
+          <h3>Current Focus</h3>
+          <ul>
+            <li>Building polished responsive interfaces</li>
+            <li>Practicing Java, Python, and C programming</li>
+            <li>Applying AI concepts to practical project ideas</li>
+            <li>Improving problem-solving through coding platforms</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" id="education" aria-labelledby="education-title">
+      <div class="section-head">
+        <p class="section-label">Education</p>
+        <h2 id="education-title">Academic Journey</h2>
+      </div>
+      <div class="timeline" id="timelineElement">
+        <article class="timeline-item">
+          <p class="timeline-date">2024 - Present</p>
+          <div>
+            <h3>SNS College of Engineering</h3>
+            <p>Bachelor of Engineering in Computer Science and Engineering</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">2022</p>
+          <div>
+            <h3>Subramaniya Bharathi Matric Higher Secondary School</h3>
+            <p>Higher Secondary Certificate (HSC) - 86%</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">2020</p>
+          <div>
+            <h3>Subramaniya Bharathi Matric Higher Secondary School</h3>
+            <p>Secondary School Leaving Certificate (SSLC) - 93%</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block skill-band" id="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <p class="section-label">Skills</p>
+        <h2 id="skills-title">Technical & Professional Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-group tilt-card">
+          <h3>Languages & Development</h3>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C Programming</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+        <article class="skill-group tilt-card">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span>Flutter</span>
+            <span>Power BI</span>
+            <span>TensorFlow</span>
+            <span>Responsive UI</span>
+            <span>Data Analysis</span>
+            <span>Web Apps</span>
+          </div>
+        </article>
+        <article class="skill-group tilt-card">
+          <h3>Professional Strengths</h3>
+          <div class="skill-tags">
+            <span>Teamwork</span>
+            <span>Quick Learning</span>
+            <span>Adaptability</span>
+            <span>Problem Solving</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="projects" aria-labelledby="projects-title">
+      <div class="section-head split-head">
+        <div>
+          <p class="section-label">Projects</p>
+          <h2 id="projects-title">Recent Work</h2>
+        </div>
+        <div class="project-filters" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" type="button" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="filter-btn" type="button" data-filter="ai" role="tab" aria-selected="false">AI</button>
+          <button class="filter-btn" type="button" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card tilt-card" data-category="ai">
+          <div class="card-glow"></div>
+          <div class="project-topline">
+            <span>AI</span>
+            <span>Python</span>
+          </div>
+          <h3>AI Vision</h3>
+          <p>
+            AI-based image recognition web application for detecting objects, classifying scenes,
+            and displaying insights in real time.
+          </p>
+          <ul>
+            <li>Implemented object detection with pre-trained deep learning models.</li>
+            <li>Designed a responsive interface with live image previews.</li>
+            <li>Improved accuracy using preprocessing and augmentation.</li>
+          </ul>
+          <p class="project-meta">TensorFlow / Web / Computer Vision</p>
+        </article>
+
+        <article class="project-card tilt-card" data-category="ai">
+          <div class="card-glow"></div>
+          <div class="project-topline">
+            <span>AI</span>
+            <span>Healthcare</span>
+          </div>
+          <h3>AI Healthcare</h3>
+          <p>
+            Prediction system for healthcare decision support and disease risk evaluation with
+            clear analytics for users.
+          </p>
+          <ul>
+            <li>Analyzed medical data and extracted features for predictive modeling.</li>
+            <li>Built a polished dashboard for visualizing patient risk factors.</li>
+            <li>Improved decision-making with smart analytics and user-friendly reporting.</li>
+          </ul>
+          <p class="project-meta">Data Analysis / Dashboard / Prediction</p>
+        </article>
+
+        <article class="project-card tilt-card" data-category="web">
+          <div class="card-glow"></div>
+          <div class="project-topline">
+            <span>Web</span>
+            <span>Frontend</span>
+          </div>
+          <h3>Modern Portfolio</h3>
+          <p>
+            Portfolio website that showcases project work with strong typography, usable navigation,
+            and responsive presentation.
+          </p>
+          <ul>
+            <li>Engineered animated section transitions using CSS and JavaScript.</li>
+            <li>Optimized responsive presentation for desktop and mobile.</li>
+            <li>Focused on readability, interaction, and strong brand identity.</li>
+          </ul>
+          <p class="project-meta">HTML / CSS / JavaScript</p>
+        </article>
+
+        <article class="project-card tilt-card" data-category="mobile">
+          <div class="card-glow"></div>
+          <div class="project-topline">
+            <span>Mobile</span>
+            <span>UX</span>
+          </div>
+          <h3>Student Planner App</h3>
+          <p>
+            Mobile-first planner for students to manage deadlines, tasks, and study goals with clarity.
+          </p>
+          <ul>
+            <li>Created controls for task creation, progress tracking, and reminders.</li>
+            <li>Used clean visuals and accessible gestures for easy navigation.</li>
+            <li>Built a polished UX suitable for Android and cross-platform frameworks.</li>
+          </ul>
+          <p class="project-meta">Flutter / UX Design / Student Tools</p>
+        </article>
+
+        <article class="project-card tilt-card" data-category="web">
+          <div class="card-glow"></div>
+          <div class="project-topline">
+            <span>Web</span>
+            <span>Portal</span>
+          </div>
+          <h3>Campus Learning Hub</h3>
+          <p>
+            Web portal concept connecting students with resources, notifications, and project collaboration tools.
+          </p>
+          <ul>
+            <li>Built secure authentication and responsive layout.</li>
+            <li>Created filters for quick access to notes, assignments, and events.</li>
+            <li>Delivered an accessible interface for students and faculty.</li>
+          </ul>
+          <p class="project-meta">React / UI / Collaboration</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="achievements" aria-labelledby="achievements-title">
+      <div class="section-head">
+        <p class="section-label">Achievements</p>
+        <h2 id="achievements-title">Recognition & Certifications</h2>
+      </div>
+      <div class="achievement-grid">
+        <article class="achievement-card tilt-card">
+          <span>Certification</span>
+          <h3>Microsoft Azure AI Fundamentals</h3>
+          <p>Completed certification demonstrating AI fundamentals and Microsoft Azure cognitive services.</p>
+        </article>
+        <article class="achievement-card tilt-card">
+          <span>Training</span>
+          <h3>IBM Enterprise Skills Program</h3>
+          <p>Finished IBM training focused on enterprise-level AI, cloud workflows, and software solutions.</p>
+        </article>
+        <article class="achievement-card tilt-card">
+          <span>Presentation</span>
+          <h3>Astranova Paper Presentation</h3>
+          <p>Presented research at CIT College, Coimbatore, showcasing technical communication and domain expertise.</p>
+        </article>
+        <article class="achievement-card tilt-card">
+          <span>Digital Skills</span>
+          <h3>NASSCOM DIGITAL EDGE 101</h3>
+          <p>Participated in a digital skills program to broaden knowledge on emerging technologies.</p>
+        </article>
+        <article class="achievement-card tilt-card">
+          <span>Hackathon</span>
+          <h3>Bugslayer Hackathon</h3>
+          <p>Competed in Dhanalakshmi Srinivasan College event, delivering a rapid prototype under time pressure.</p>
+        </article>
+        <article class="achievement-card tilt-card">
+          <span>Communication</span>
+          <h3>Language Proficiency</h3>
+          <p>Fluent in Tamil and English, enabling clear communication and collaborative teamwork.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-head">
+        <p class="section-label">Contact</p>
+        <h2 id="contact-title">Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Open to internships, projects, and collaboration.</h3>
+          <p>If you have a project, internship opportunity, or collaboration in mind, I would love to hear from you.</p>
+          <ul>
+            <li><strong>Email</strong><a href="mailto:aakila5500@gmail.com">aakila5500@gmail.com</a></li>
+            <li><strong>Location</strong><span>Coimbatore, India</span></li>
+            <li><strong>Profiles</strong><span><a href="https://www.linkedin.com/in/akila-alagupandi" target="_blank" rel="noreferrer">LinkedIn</a> / <a href="https://leetcode.com/u/akila_12/" target="_blank" rel="noreferrer">LeetCode</a></span></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form tilt-card">
+          <div class="field-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="field-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed and developed by Akila A &middot; &copy; 2026</p>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" type="button" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+</body>
+</html>
